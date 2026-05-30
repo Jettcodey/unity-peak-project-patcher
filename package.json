@@ -1,6 +1,6 @@
 {
   "name": "com.peakmodding.unity-peak-project-patcher",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "displayName": "PEAK Project Patcher",
   "description": "A game wrapper that generates a Unity project from PEAK's build that can be playable in-editor",
   "unity": "6000.0",

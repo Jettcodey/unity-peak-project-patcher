@@ -11,8 +11,7 @@ namespace PeakModding.PeakProjectPatcher.Editor
 			stepPipeline.Steps.Clear();
 
             stepPipeline.InsertLast(new GenerateDefaultProjectStructureStep());
-            // stepPipeline.InsertLast(new ImportTextMeshProStep());  // Doesnt work with Unity 6000+
-            stepPipeline.InsertLast(new ImportTMPEssentialsExtrasStep());  // Important wrapper script to replace the above broken TMP import step for unity 6000+
+            stepPipeline.InsertLast(new ImportTextMeshProStep());  // Works again
             stepPipeline.InsertLast(new GenerateGitIgnoreStep());
             // stepPipeline.InsertLast(new GenerateReadmeStep());  // not needed imo so commented out
             stepPipeline.InsertLast(new PackagesInstallerStep());  // restart and recompile
