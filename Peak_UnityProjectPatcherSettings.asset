@@ -50,10 +50,6 @@ MonoBehaviour:
     outputPath: 
     exclude: 0
   - key: 
-    sourceName: Klattersynth.dll
-    outputPath: 
-    exclude: 0
-  - key: 
     sourceName: pworld.dll
     outputPath: 
     exclude: 0

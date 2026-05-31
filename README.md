@@ -11,6 +11,7 @@
 # Table of Contents
 
 - [About the Project](#about-the-project)
+- [Current Limitations](#current-limitations)
 - [Getting Started](#getting-started)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -26,6 +27,15 @@ This wrapper allows you to rip a build of PEAK with all its extracted assets/scr
 > This tool does not distribute game files. It simply works off of your copy of the game!
 >
 > Also, this tool is for **personal** use only. Do not re-distrubute game files to others.
+
+## Current Limitations
+
+This is also kinda the TODO's
+
+- In-Editor Play Mode is currently not working.
+- Some ScriptableObjects, scenes, and prefabs have missing references to scripts, objects, or other assets.
+- None of the ripped shaders are working and no shader replacements are available.
+- URP_Renderer asset is missing Renderer Features
 
 ## Getting Started
 

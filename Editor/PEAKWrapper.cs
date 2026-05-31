@@ -13,7 +13,7 @@ namespace PeakModding.PeakProjectPatcher.Editor
             stepPipeline.InsertLast(new GenerateDefaultProjectStructureStep());
             stepPipeline.InsertLast(new ImportTextMeshProStep());  // Works again
             stepPipeline.InsertLast(new GenerateGitIgnoreStep());
-            // stepPipeline.InsertLast(new GenerateReadmeStep());  // not needed imo so commented out
+            stepPipeline.InsertLast(new GenerateReadmeStep());
             stepPipeline.InsertLast(new PackagesInstallerStep());  // restart and recompile
             stepPipeline.InsertLast(new CacheProjectCatalogueStep());
             stepPipeline.InsertLast(new AssetRipperStep());
@@ -26,6 +26,7 @@ namespace PeakModding.PeakProjectPatcher.Editor
             stepPipeline.InsertLast(new GuidRemapperStep());
             stepPipeline.InsertLast(new CopyAssetRipperExportToProjectStep());  //restart (throws safe mode error most of the time here)
             stepPipeline.InsertLast(new FixProjectFileIdsStep());
+            stepPipeline.InsertLast(new InjectURPAssetsStep());  // was missing since the injection steps needed to be updated
             stepPipeline.InsertLast(new SortAssetTypesSteps());
             stepPipeline.InsertLast(new RestartEditorStep());  //restart (who would've thought lol)
 			
