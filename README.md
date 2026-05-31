@@ -93,15 +93,21 @@ If you don't want to use plugins, then follow the steps at https://github.com/Je
 
 ## Usage
 
-The tool window can be opened via `Tools > Unity Project Patcher > Open Window`
+The tool window can be opened via `Tools > Unity Project Patcher > Open Window` then simply click on `Run Patcher` at the Top of the window to begin patching the project.
 
 Estimated patch durations:
 
-- Fresh patch: **30 minutes to 1 hour** 
+- Fresh patch: **45 minutes to 1 hour** 
   > Up to 10 hours if you didnt delete the necessary files mentioned [here](#getting-started)
 - Already patched: Unknown (Not Tested)
 
 These can vary wildly depending on system speed and project size.
+
+> [!NOTE]
+> This process **WILL** take a while and will restart the Unity Editor about 5-6 times.
+> At the very beginning, you will receive 4 Popups. You can safely click **OK** on each of them.\
+> After some steps finished you'll get the 5th Popup `Script Updating Consent`, cick on **`Yes, for these and other files that might be found later`** for the patching process to continue.\
+> After the Editor restarts for the final time, a confirmation Popup will appear indicating the project has been successfully patched. Click OK.
 
 ## FAQ
 

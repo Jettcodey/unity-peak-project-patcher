@@ -17,10 +17,14 @@ namespace PeakModding.PeakProjectPatcher.Editor
             stepPipeline.InsertLast(new PackagesInstallerStep());  // restart and recompile
             stepPipeline.InsertLast(new CacheProjectCatalogueStep());
             stepPipeline.InsertLast(new AssetRipperStep());
+            // Need to investigate if these 2 commented steps can fix some of the remaining issues we have
+            // stepPipeline.InsertLast(new PromptUserWithAddressablePluginStep());
+            // stepPipeline.InsertLast(new AddressablesGuidRemapperStep());
             stepPipeline.InsertLast(new CopyGamePluginsStep());  // recompile
             stepPipeline.InsertLast(new GeneratePhotonAssembliesStep());
             stepPipeline.InsertLast(new GenerateZorroAssembliesStep());
-            stepPipeline.InsertLast(new CopyExplicitScriptFolderStep());  //restart
+            // The currently missing references are very likely caused by not copying all needed decomped Assemblies
+            stepPipeline.InsertLast(new CopyExplicitScriptFolderStep());  //restart 
             stepPipeline.InsertLast(new EnableUnsafeCodeStep());  //recompile
             stepPipeline.InsertLast(new CopyProjectSettingsStep(allowUnsafeCode: true));  //restart
             stepPipeline.InsertLast(new GuidRemapperStep());
