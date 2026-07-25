@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameName: PEAK
   _customGameName: 
-  _gameVersion: v6000.0.62f1
+  _gameVersion: 6000.3.15.12692100
   _pipelineType: 1
   _dllsToCopy:
   - key: 
@@ -26,23 +26,7 @@ MonoBehaviour:
     outputPath: 
     exclude: 0
   - key: 
-    sourceName: DemiLib.dll
-    outputPath: 
-    exclude: 0
-  - key: 
-    sourceName: DOTween.dll
-    outputPath: 
-    exclude: 0
-  - key: 
-    sourceName: DOTweenPro.dll
-    outputPath: 
-    exclude: 0  
-  - key: 
     sourceName: HBAO.Runtime.dll
-    outputPath: 
-    exclude: 0
-  - key: 
-    sourceName: HBAO.Universal.Runtime.dll
     outputPath: 
     exclude: 0
   - key: 
@@ -51,10 +35,6 @@ MonoBehaviour:
     exclude: 0
   - key: 
     sourceName: pworld.dll
-    outputPath: 
-    exclude: 0
-  - key: 
-    sourceName: sc.posteffects.runtime.dll
     outputPath: 
     exclude: 0
   - key: 
@@ -115,6 +95,11 @@ MonoBehaviour:
     exclude: 0
   _scriptDllFoldersToCopy:
   - Assembly-CSharp
+  - DOTween
+  - DOTweenPro
+  - DemiLib
+  - HBAO.Universal.Runtime
+  - LightVolume.Runtime
   - Photon3Unity3D
   - PhotonChat
   - PhotonRealtime
@@ -123,6 +108,7 @@ MonoBehaviour:
   - PhotonVoice
   - PhotonVoice.API
   - PhotonVoice.PUN
+  - sc.posteffects.runtime
   - Zorro.AutoLOD
   - Zorro.ControllerSupport
   - Zorro.Core.Runtime
@@ -136,7 +122,7 @@ MonoBehaviour:
   - Unity.
   _exactPackagesFound:
   - name: com.unity.ai.navigation
-    version: 2.0.9
+    version: 2.0.12
     dependencies:
     - name: com.unity.modules.ai
       version: 1.0.0
@@ -147,30 +133,30 @@ MonoBehaviour:
     - name: com.autodesk.fbx
       version: 5.1.1
     - name: com.unity.timeline
-      version: 1.8.9
+      version: 1.8.12
     matchType: 0
   - name: com.unity.inputsystem
-    version: 1.14.2
+    version: 1.19.0
     dependencies:
     - name: com.unity.modules.uielements
       version: 1.0.0
     matchType: 0
   - name: com.unity.memoryprofiler
-    version: 1.1.9
+    version: 1.1.11
     dependencies:
     - name: com.unity.burst
-      version: 1.8.25
+      version: 1.8.29
     - name: com.unity.collections
-      version: 2.6.2
+      version: 2.6.4
     - name: com.unity.mathematics
-      version: 1.3.2
+      version: 1.3.3
     - name: com.unity.profiling.core
-      version: 1.0.2
+      version: 1.0.3
     - name: com.unity.editorcoroutines
-      version: 1.0.0
+      version: 1.0.1
     matchType: 0
   - name: com.unity.profiling.core
-    version: 1.0.2
+    version: 1.0.3
     dependencies: []
     matchType: 0
   - name: com.unity.project-auditor
@@ -182,25 +168,25 @@ MonoBehaviour:
       version: 3.2.1
     matchType: 0
   - name: com.unity.shadergraph
-    version: 17.0.4
+    version: 17.6.0
     dependencies:
     - name: com.unity.render-pipelines.core
-      version: 17.0.4
+      version: 17.6.0
     - name: com.unity.searcher
       version: 4.9.3
     matchType: 0
   - name: com.unity.splines
-    version: 2.8.2
+    version: 2.8.4
     dependencies:
     - name: com.unity.mathematics
-      version: 1.3.2
+      version: 1.3.3
     - name: com.unity.modules.imgui
       version: 1.0.0
     - name: com.unity.settings-manager
       version: 2.1.0
     matchType: 0
   - name: com.unity.timeline
-    version: 1.8.9
+    version: 1.8.12
     dependencies:
     - name: com.unity.modules.audio
       version: 1.0.0
@@ -220,7 +206,7 @@ MonoBehaviour:
       version: 1.0.0
     matchType: 0
   - name: com.unity.visualscripting
-    version: 1.9.9
+    version: 1.9.11
     dependencies:
     - name: com.unity.ugui
       version: 2.0.0
@@ -228,35 +214,35 @@ MonoBehaviour:
       version: 1.0.0
     matchType: 0
   - name: com.unity.localization
-    version: 1.5.8
+    version: 1.5.12
     dependencies: []
     matchType: 0
   - name: com.unity.animation.rigging
-    version: 1.3.0
+    version: 1.4.1
     dependencies: []
     matchType: 0
   - name: com.unity.multiplayer.playmode
-    version: 1.6.1
+    version: 2.0.1
     dependencies: []
     matchType: 0
   - name: com.unity.cinemachine
-    version: 3.1.5
+    version: 3.1.6
     dependencies: []
     matchType: 0
   - name: com.unity.render-pipelines.universal
-    version: 17.0.4
+    version: 17.6.0
     dependencies: []
     matchType: 0
   - name: com.unity.visualeffectgraph
-    version: 17.0.4
+    version: 17.6.0
     dependencies: []
     matchType: 0
   - name: com.unity.addressables
-    version: 2.7.4
+    version: 2.9.1
     dependencies: []
     matchType: 0
   - name: com.unity.transport
-    version: 2.6.0
+    version: 2.7.4
     dependencies: []
     matchType: 0
   - name: com.unity.multiplayer.center
@@ -264,7 +250,7 @@ MonoBehaviour:
     dependencies: []
     matchType: 0
   - name: com.unity.services.multiplayer
-    version: 1.1.0
+    version: 2.3.0
     dependencies: []
     matchType: 0
   _possiblePackagesFound: []

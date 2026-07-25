@@ -14,23 +14,22 @@ namespace PeakModding.PeakProjectPatcher.Editor
             stepPipeline.InsertLast(new ImportTextMeshProStep());  // Works again
             stepPipeline.InsertLast(new GenerateGitIgnoreStep());
             stepPipeline.InsertLast(new GenerateReadmeStep());
-            stepPipeline.InsertLast(new PackagesInstallerStep());  // restart and recompile
+            stepPipeline.InsertLast(new PackagesInstallerStep());  // restart
             stepPipeline.InsertLast(new CacheProjectCatalogueStep());
             stepPipeline.InsertLast(new AssetRipperStep());
-            // Need to investigate if these 2 commented steps can fix some of the remaining issues we have
-            // stepPipeline.InsertLast(new PromptUserWithAddressablePluginStep());
-            // stepPipeline.InsertLast(new AddressablesGuidRemapperStep());
             stepPipeline.InsertLast(new CopyGamePluginsStep());  // recompile
             stepPipeline.InsertLast(new GeneratePhotonAssembliesStep());
             stepPipeline.InsertLast(new GenerateZorroAssembliesStep());
-            // The currently missing references are very likely caused by not copying all needed decomped Assemblies
-            stepPipeline.InsertLast(new CopyExplicitScriptFolderStep());  //restart 
+            stepPipeline.InsertLast(new DOTweenVisibilityStep());
+            stepPipeline.InsertLast(new LightVolumeHdrLogStep());
+            stepPipeline.InsertLast(new CopyExplicitScriptFolderStep());  //restart
             stepPipeline.InsertLast(new EnableUnsafeCodeStep());  //recompile
             stepPipeline.InsertLast(new CopyProjectSettingsStep(allowUnsafeCode: true));  //restart
             stepPipeline.InsertLast(new GuidRemapperStep());
+            stepPipeline.InsertLast(new DisableHBAOFeatureStep());  // dummy shaders from assetripper cause issues
             stepPipeline.InsertLast(new CopyAssetRipperExportToProjectStep());  //restart (throws safe mode error most of the time here)
             stepPipeline.InsertLast(new FixProjectFileIdsStep());
-            stepPipeline.InsertLast(new InjectURPAssetsStep());  // was missing since the injection steps needed to be updated
+            stepPipeline.InsertLast(new InjectURPAssetsStep());  // restart
             stepPipeline.InsertLast(new SortAssetTypesSteps());
             stepPipeline.InsertLast(new RestartEditorStep());  //restart (who would've thought lol)
 			
