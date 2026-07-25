@@ -56,7 +56,7 @@ Before patching, make a copy of your PEAK install and delete the following range
 
 ### Unity Project
 
-- Requires [Unity 6000.0.62f1](https://unity.com/releases/editor/whats-new/6000.0.62f1) or [Unity 6000.0.67f1](https://unity.com/releases/editor/whats-new/6000.0.67f1)
+- Requires [Unity 6000.3.15f1](https://unity.com/releases/editor/whats-new/6000.3.15f1)
 - Unity Universal Render Pipeline (URP)
 
 Create a new Unity project with the above requirements before getting started.
