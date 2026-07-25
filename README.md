@@ -70,7 +70,7 @@ You will need to install three packages in sequence here:
 
 ### Installing the Unity Project Patcher core
 
-1. Open the Package Manager from `Window > Package Manager`
+1. Open the Package Manager from `Window > Package Management > Package Manager`
 2. Click the '+' button in the top-left of the window
 3. Click 'Add package from git URL'
 4. Provide the URL of the this git repository: `https://github.com/Jettcodey/unity-project-patcher.git`
