@@ -28,29 +28,29 @@ This wrapper allows you to rip a build of PEAK with all its extracted assets/scr
 >
 > Also, this tool is for **personal** use only. Do not re-distrubute game files to others.
 
-## Current Limitations
+Current Patcher version is `v0.2.0` for game version `1.65.a and up` 
+### Current Limitations
 
-This is also kinda the TODO's
+- Editor Play Mode does **NOT** work properly yet.
+- Some Scenes, Prefabs, and ScriptableObjects have missing references.
+- UI is completely borked atm.
+- Ripped shaders are understandably broken.
+  - (Replacements are needed or you try importing those gathered following this guide: https://discord.com/channels/1363179626435707082/1444836081559408802 )
+- Missing new Editor Scripts posted here from one of the PEAK Devs:  https://discord.com/channels/1363179626435707082/1529914607244673124
+### Requirements
 
-- In-Editor Play Mode is currently not working.
-- Some ScriptableObjects, scenes, and prefabs have missing references to scripts, objects, or other assets.
-- None of the ripped shaders are working and no shader replacements are available.
-- URP_Renderer asset is missing Renderer Features
+- [Git](https://git-scm.com/downloads)
+- [.NET 10.0](https://dotnet.microsoft.com/en-us/download/dotnet/10.0) (for AssetRipper)
+- Unity [6000.3.15f1](https://unity.com/releases/editor/whats-new/6000.3.15f1)
+- Universal Render Pipeline (URP)
+### Important Step (Don't Skip!)
 
-## Getting Started
+Before patching, make a copy of your PEAK install and delete the following range of files from the copied directory:
 
-Make sure you have the following before using the tool in any way:
+- **`PEAK_Data/level9`** through **`level46`**
+- **`PEAK_Data/sharedassets9.assets`** through **`sharedassets46.assets`**
 
-- [Git](https://git-scm.com/download/win)
-- [.NET 10.0](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)
-  - To run Asset Ripper
-
-Make a copy of your PEAK Game installation folder somewhere else on your Hard Drive. In that copy of the Game you need to go into the `PEAK\PEAK_Data\` directory and delete the following:
-
-- All files named `level7` up to `level25`
-- All files named `sharedassets7.assets` up to `sharedassets25.assets`
-
-**If you skip this step the Patching Proccess will take up to 10 Hours!**
+**Skipping this step can increase the patch time from ~1 hour to up to 10 hours.**
 
 ## Installation
 
