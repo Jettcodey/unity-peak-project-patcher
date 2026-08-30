@@ -21,7 +21,7 @@
 
 This tool is a game wrapper on top of the [Unity Project Patcher Fork](https://github.com/Jettcodey/unity-project-patcher) by Jettcodey.
 
-This wrapper allows you to rip a build of PEAK with all its extracted assets/scripts/etc to then generatee a project for usage in the Unity editor.
+This wrapper allows you to rip a build of PEAK with all its extracted assets/scripts/etc to then generate a project for usage in the Unity editor.
 
 > [!IMPORTANT]  
 > This tool does not distribute game files. It simply works off of your copy of the game!
@@ -47,8 +47,8 @@ Current Patcher version is `v0.2.0` for game version `1.65.a and up`
 
 Before patching, make a copy of your PEAK install and delete the following range of files from the copied directory:
 
-- **`PEAK_Data/level9`** through **`level46`**
-- **`PEAK_Data/sharedassets9.assets`** through **`sharedassets46.assets`**
+- **`PEAK_Data/level6`** through **`level13`**
+- **`PEAK_Data/sharedassets6.assets`** through **`sharedassets13.assets`**
 
 **Skipping this step can increase the patch time from ~1 hour to up to 10 hours.**
 
@@ -95,10 +95,10 @@ If you don't want to use plugins, then follow the steps at https://github.com/Je
 
 The tool window can be opened via `Tools > Unity Project Patcher > Open Window` then simply click on `Run Patcher` at the Top of the window to begin patching the project.
 
-Estimated patch durations:
+Estimated patch duration:
 
 - Fresh patch: **45 minutes to 1 hour** 
-  > Up to 10 hours if you didnt delete the necessary files mentioned [here](#getting-started)
+  > Up to 10 hours if you didn't delete the necessary files mentioned [here](#getting-started)
 - Already patched: Unknown (Not Tested)
 
 These can vary wildly depending on system speed and project size.
@@ -122,6 +122,6 @@ For more questions, see core project's FAQ: https://github.com/Jettcodey/unity-p
 
 Initial Unity Peak Project Patcher development by [Jettcodey](https://github.com/Jettcodey)
 
-The **`Unity PEAK Project Patcher`** would not have been possible without the prior work on the [R.E.P.O. Project Patcher](https://github.com/ZehsTeam/unity-repo-project-patcher) by [Kesomannen](https://github.com/Kesomannen/) and [ZehsTeam](https://github.com/ZehsTeam), which was used as a template, along with the inclusion of the [GeneratePhotonAssembliesStep.cs](https://github.com/ZehsTeam/unity-repo-project-patcher/blob/master/Editor/GeneratePhotonAssembliesStep.cs) file for this Unity Project Patcher wrapper.
+The **`Unity PEAK Project Patcher`** would not have been possible without the prior work on the [R.E.P.O. Project Patcher](https://github.com/ZehsTeam/unity-repo-project-patcher) by [Kesomannen](https://github.com/Kesomannen/) and [ZehsTeam](https://github.com/ZehsTeam), which was used as a template, along with the inclusion of a slightly modified version of the [GeneratePhotonAssembliesStep.cs](https://github.com/ZehsTeam/unity-repo-project-patcher/blob/master/Editor/GeneratePhotonAssembliesStep.cs) file.
 
 Also a Huge thanks to all the Members of the [PEAK Modding Discord Server](https://discord.gg/SAw86z24rB). All the previously documented findings and guides for ripping the game assets were a very useful resource while developing this Unity Project Patcher wrapper.
