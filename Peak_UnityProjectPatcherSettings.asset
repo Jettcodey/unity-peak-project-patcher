@@ -74,6 +74,54 @@ MonoBehaviour:
     outputPath:
     exclude: 0
   - key: 
+    sourceName: Accessibility.dll
+    outputPath:
+    exclude: 0
+  - key: 
+    sourceName: EpicCommon.dll
+    outputPath:
+    exclude: 0
+  - key: 
+    sourceName: EpicOnlineService.dll
+    outputPath:
+    exclude: 0
+  - key: 
+    sourceName: Managers.dll
+    outputPath:
+    exclude: 0
+  - key: 
+    sourceName: PlatformProviders.dll
+    outputPath:
+    exclude: 0
+  - key: 
+    sourceName: Platforms.dll
+    outputPath:
+    exclude: 0
+  - key: 
+    sourceName: PortningsbolagetMemory.dll
+    outputPath:
+    exclude: 0
+  - key: 
+    sourceName: SteamCommon.dll
+    outputPath:
+    exclude: 0
+  - key: 
+    sourceName: SteamManagerAssembly.dll
+    outputPath:
+    exclude: 0
+  - key: 
+    sourceName: User.dll
+    outputPath:
+    exclude: 0
+  - key: 
+    sourceName: Utilities.dll
+    outputPath:
+    exclude: 0
+  - key: 
+    sourceName: XblPCSandbox.dll
+    outputPath:
+    exclude: 0
+  - key: 
     sourceName: ..\Plugins\x86_64\AudioIn.dll
     outputPath: 
     exclude: 0
@@ -93,6 +141,18 @@ MonoBehaviour:
     sourceName: ..\Plugins\x86_64\webrtc-audio.dll
     outputPath: 
     exclude: 0
+  - key:
+    sourceName: ..\Plugins\x86_64\MemoryWrapper-x64-Debug.dll
+    outputPath:
+    exclude: 0
+  - key:
+    sourceName: ..\Plugins\x86_64\MemoryWrapper-x64-Release.dll
+    outputPath: 
+    exclude: 0
+  - key:
+    sourceName: ..\Plugins\x86_64\EOSSDK-Win64-Shipping.dll
+    outputPath: 
+    exclude: 0
   _scriptDllFoldersToCopy:
   - Assembly-CSharp
   - DOTween
@@ -102,6 +162,7 @@ MonoBehaviour:
   - LightVolume.Runtime
   - Photon3Unity3D
   - PhotonChat
+  - Photon
   - PhotonRealtime
   - PhotonUnityNetworking
   - PhotonUnityNetworking.Utilities

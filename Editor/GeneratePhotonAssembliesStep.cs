@@ -26,6 +26,13 @@ namespace PeakModding.PeakProjectPatcher.Editor {
             { "PhotonRealtime", new [] { 
                 "Photon3Unity3D" 
             } },
+            { "Photon", new [] {
+                "com.rlabrecque.steamworks.net",
+                "Managers",
+                "Photon3Unity3D",
+                "PhotonRealtime",
+                "PhotonUnityNetworking"
+            } },
             { "PhotonUnityNetworking", new [] { 
                 "Photon3Unity3D", 
                 "PhotonRealtime" 

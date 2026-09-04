@@ -113,11 +113,12 @@ namespace PeakModding.PeakProjectPatcher.Editor {
             // If System.IO is alreay existing the file has already been patched.
             if (content.Contains("using System.IO;")) return;
 
-            // Switch to System.IO.Path as we're missing? the Zorro.Core.Editor stuff 
+            // Switch to System.IO.Path as we're missing? the Zorro.Core.Editor stuff
+            // I really should look into getting the Zorro stuff working properly.
             content = content.Replace("using Zorro.Core.Editor;", "using System.IO;");
 
-            string oldStuff = "string result = PathUtil.WithoutExtensions(PathUtil.GetFileName(ScenePaths[levelIndex]));";
-            string newStuff = "string result = Path.GetFileNameWithoutExtension(ScenePaths[levelIndex]);";
+            string oldStuff = "string result = PathUtil.WithoutExtensions(PathUtil.GetFileName(text));";
+            string newStuff = "string result = Path.GetFileNameWithoutExtension(text);";
 
             if (content.Contains(oldStuff)) {
                 content = content.Replace(oldStuff, newStuff);
