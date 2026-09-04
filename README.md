@@ -25,7 +25,7 @@ This wrapper allows you to rip a build of PEAK with all its extracted assets/scr
 >
 > Also, this tool is for **personal** use only. Do not re-distrubute game files to others.
 
-Current Patcher version is `v0.2.0` for game version `1.65.a and up`\
+Current Patcher version is `v0.2.5` for game version `2.04.b and up`\
 The finished PEAK Unity Project functionality and custom creations are limited to some extent. Make sure to check the list below.
 <details>
 <summary><strong>List of Current Limitations (Click to Expand)</strong></summary>
