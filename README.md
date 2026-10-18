@@ -8,6 +8,9 @@
   </p>
 </div>
 
+> [!CAUTION]  
+> <ins>**This tool is currently not working as of Peak update `2.5.a`** and Newer!</ins>
+
 # Table of Contents
 
 - [About the Project](#about-the-project)
@@ -25,7 +28,7 @@ This wrapper allows you to rip a build of PEAK with all its extracted assets/scr
 >
 > Also, this tool is for **personal** use only. Do not re-distrubute game files to others.
 
-Current Patcher version is `v0.2.5` for game version `2.04.b and up`\
+Current Patcher version is `v0.2.5` for game version `2.04.b -> 2.4.C`, <ins>Version **`2.5.x`** and Newer are currently not Supported!!!</ins>\
 The finished PEAK Unity Project functionality and custom creations are limited to some extent. Make sure to check the list below.
 <details>
 <summary><strong>List of Current Limitations (Click to Expand)</strong></summary>
